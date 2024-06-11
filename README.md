@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-# Supplementary data for "Accurate nuclear quantum statistics at the cost of classical molecular dynamics"
+# Supplementary data for "Accurate nuclear quantum statistics on machine learned classical effective potentials"
 
-Scripts, input files, codes and models required to reproduce the results of "Zaporozhets I. et al. Accurate nuclear quantum statistics at the cost of classical molecular
+Scripts, input files, codes and models required to reproduce the results of "Zaporozhets I. et al. Accurate nuclear quantum statistics on machine learned classical effective potentials
 dynamics (2024)"
 
 ## Systems
