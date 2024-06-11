@@ -1,0 +1,6 @@
+P: 64
+filename: h5o2+.h5
+t0: 600
+temperatures: [100, 300]
+groups: ['h5o2+_T=0100K', 'h5o2+_T=0300K']
+dry_run: False

@@ -1,0 +1,17 @@
+dataset_fn: 'h5o2+.h5'
+P: 64
+root_location: ./example_setup/
+system: 'h5o2+'
+init_file : ./example_setup/init.xyz
+temp_folders: ['0100','0300']
+temperatures: [100, 300]
+data_dict: {pos: [simulation.pos, 'coordinates'],  
+            for: [simulation.for, 'forces'],
+            fsp:  [simulation.fsp, 'forces']}
+first_frame: 250
+last_frame:  50250
+add_spring_energy: True
+add_potential_energy: True
+recompute_spring_energy: True
+potential_energy_file: 'simulation.out'
+spring_energy_file: null

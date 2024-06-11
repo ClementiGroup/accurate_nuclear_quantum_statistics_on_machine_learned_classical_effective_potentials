@@ -1,0 +1,3 @@
+output_file: features.npz
+position_file: ../../modeling/example_setup/simulation.pos_0.xyz
+system: h2o

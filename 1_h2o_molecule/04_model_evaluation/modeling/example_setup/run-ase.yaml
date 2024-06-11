@@ -1,0 +1,5 @@
+HOSTNAME: socket_address
+PATH2CKPT: ../../../models/100/seed_1230_epoch=60-validation_loss=0.0628.ckpt
+PATH2INIT: ./h2o.xyz
+PATH2PIGS: /home/iryna/Software/te-pigs/
+device: cpu

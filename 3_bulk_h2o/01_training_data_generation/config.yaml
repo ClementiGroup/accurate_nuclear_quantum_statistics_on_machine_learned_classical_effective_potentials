@@ -1,0 +1,19 @@
+dataset_fn: 'h2o_256.h5'
+P: 32
+system: 'h2o'
+root_location: .  
+init_file : ./example_setup/init.xyz
+temp_folders: [ '0300']
+temperatures: [ 300 ]
+data_dict: {pos: [simulation.pos, 'coordinates'],  
+            for: [simulation.for, 'forces'],
+            fsp:  [simulation.fsp, 'forces']
+            }
+first_frame: 10000
+last_frame:  150000
+stride: 10
+add_spring_energy: False
+add_potential_energy: True
+recompute_spring_energy: False
+potential_energy_file: 'simulation.out'
+spring_energy_file: null

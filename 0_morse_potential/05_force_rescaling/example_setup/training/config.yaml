@@ -1,0 +1,12 @@
+n_rbf: 10
+cutoff_lower: 0
+cutoff_upper: 5
+alpha: 1.0e-2
+n_splits: 5
+model_type: 'ridge'
+splitting_random_state: 100
+position_file: ../dataset/data_total_coordinates.npy
+force_file: ../dataset/data_spring_forces.npy
+records_to_skip: 0
+device: cpu
+device_id: null

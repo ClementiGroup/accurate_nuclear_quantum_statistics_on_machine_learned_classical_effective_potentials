@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --export=ALL
+#SBATCH --job-name=dataset
+#SBATCH --tasks 1
+#SBATCH --mem-per-cpu=5G
+#SBATCH --time=1-23:59:00
+#SBATCH --mail-type=FAIL
+#SBATCH --nodes=1
+#SBATCH --output=job%j.out
+#SBATCH --error=job%j.err
+#SBATCH --partition=main
+
+source ~/.bashrc
+conda activate picg
+python  ../../scripts/ipi2hdf5.py --config config.yaml
+python  ../../scripts/process_h5.py --config config_postprocess.yaml
+python  ../../scripts/optimize_forces_h5.py --config config_optimize.yaml

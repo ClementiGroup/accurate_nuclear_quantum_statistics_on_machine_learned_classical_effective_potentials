@@ -1,0 +1,660 @@
+train:
+    batch_sizes:
+        h2o_T=0100K: 64
+    max_epoch_samples:
+    metasets:
+        h2o_T=0100K:
+            detailed_indices:
+                bead_0:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_1:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_10:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_11:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_12:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_13:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_14:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_15:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_16:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_17:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_18:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_19:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_2:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_20:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_21:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_22:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_23:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_24:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_25:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_26:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_27:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_28:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_29:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_3:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_30:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_31:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_32:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_33:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_34:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_35:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_36:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_37:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_38:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_39:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_4:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_40:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_41:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_42:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_43:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_44:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_45:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_46:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_47:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_48:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_49:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_5:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_50:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_51:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_52:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_53:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_54:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_55:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_56:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_57:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_58:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_59:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_6:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_60:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_61:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_62:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_63:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_7:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_8:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_9:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+            molecules:
+            - bead_0
+            - bead_1
+            - bead_2
+            - bead_3
+            - bead_4
+            - bead_5
+            - bead_6
+            - bead_7
+            - bead_8
+            - bead_9
+            - bead_10
+            - bead_11
+            - bead_12
+            - bead_13
+            - bead_14
+            - bead_15
+            - bead_16
+            - bead_17
+            - bead_18
+            - bead_19
+            - bead_20
+            - bead_21
+            - bead_22
+            - bead_23
+            - bead_24
+            - bead_25
+            - bead_26
+            - bead_27
+            - bead_28
+            - bead_29
+            - bead_30
+            - bead_31
+            - bead_32
+            - bead_33
+            - bead_34
+            - bead_35
+            - bead_36
+            - bead_37
+            - bead_38
+            - bead_39
+            - bead_40
+            - bead_41
+            - bead_42
+            - bead_43
+            - bead_44
+            - bead_45
+            - bead_46
+            - bead_47
+            - bead_48
+            - bead_49
+            - bead_50
+            - bead_51
+            - bead_52
+            - bead_53
+            - bead_54
+            - bead_55
+            - bead_56
+            - bead_57
+            - bead_58
+            - bead_59
+            - bead_60
+            - bead_61
+            - bead_62
+            - bead_63
+            stride: 1
+    subsample_random_seed: 42
+val:
+    batch_sizes:
+        h2o_T=0100K: 64
+    max_epoch_samples:
+    metasets:
+        h2o_T=0100K:
+            detailed_indices:
+                bead_0:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_1:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_10:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_11:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_12:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_13:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_14:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_15:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_16:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_17:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_18:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_19:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_2:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_20:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_21:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_22:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_23:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_24:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_25:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_26:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_27:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_28:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_29:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_3:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_30:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_31:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_32:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_33:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_34:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_35:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_36:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_37:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_38:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_39:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_4:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_40:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_41:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_42:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_43:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_44:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_45:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_46:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_47:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_48:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_49:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_5:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_50:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_51:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_52:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_53:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_54:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_55:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_56:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_57:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_58:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_59:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_6:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_60:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_61:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_62:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_63:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_7:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_8:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+                bead_9:
+                    seed: 1230
+                    test_ratio: 0.0
+                    val_ratio: 0.2
+            molecules:
+            - bead_0
+            - bead_1
+            - bead_2
+            - bead_3
+            - bead_4
+            - bead_5
+            - bead_6
+            - bead_7
+            - bead_8
+            - bead_9
+            - bead_10
+            - bead_11
+            - bead_12
+            - bead_13
+            - bead_14
+            - bead_15
+            - bead_16
+            - bead_17
+            - bead_18
+            - bead_19
+            - bead_20
+            - bead_21
+            - bead_22
+            - bead_23
+            - bead_24
+            - bead_25
+            - bead_26
+            - bead_27
+            - bead_28
+            - bead_29
+            - bead_30
+            - bead_31
+            - bead_32
+            - bead_33
+            - bead_34
+            - bead_35
+            - bead_36
+            - bead_37
+            - bead_38
+            - bead_39
+            - bead_40
+            - bead_41
+            - bead_42
+            - bead_43
+            - bead_44
+            - bead_45
+            - bead_46
+            - bead_47
+            - bead_48
+            - bead_49
+            - bead_50
+            - bead_51
+            - bead_52
+            - bead_53
+            - bead_54
+            - bead_55
+            - bead_56
+            - bead_57
+            - bead_58
+            - bead_59
+            - bead_60
+            - bead_61
+            - bead_62
+            - bead_63
+            stride: 1
+    subsample_random_seed: 42

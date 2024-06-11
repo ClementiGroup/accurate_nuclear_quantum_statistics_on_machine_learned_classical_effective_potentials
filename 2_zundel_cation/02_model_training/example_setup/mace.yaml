@@ -1,0 +1,34 @@
+model:
+  loss:
+    class_path: pigs.nn.Loss
+    init_args:
+      # list of losses to optimize
+      losses:
+        - class_path: pigs.nn.ForceRMSE
+          init_args:
+            force_kwd: forces
+  # model specifications
+  model:
+    class_path: pigs.nn.MACEInterface
+    init_args:
+      max_num_neighbors: 100
+      activation:
+        class_path: torch.nn.Tanh
+        init_args: {}
+      gate:
+        class_path: torch.nn.Tanh
+        init_args: {}
+      config:
+        r_max: 6.0
+        num_bessel: 15
+        num_polynomial_cutoff: 6
+        max_ell: 3
+        interaction_cls: RealAgnosticResidualInteractionBlock
+        interaction_cls_first: RealAgnosticResidualInteractionBlock
+        num_interactions: 1
+        num_elements: 2
+        hidden_irreps: 128x0e
+        MLP_irreps: 16x0e
+        avg_num_neighbors: 10
+        correlation: 3
+        atomic_numbers: [1, 8]

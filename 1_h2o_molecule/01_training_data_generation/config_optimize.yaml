@@ -1,0 +1,6 @@
+P: 64
+filename: h2o.h5
+t0: 600 # Reference temperature 
+temperatures: [100, 300, 600]
+groups: ['h2o_T=0100K', 'h2o_T=0300K', 'h2o_T=0600K']
+dry_run: False

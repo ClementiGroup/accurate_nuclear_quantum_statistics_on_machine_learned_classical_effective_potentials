@@ -1,0 +1,58 @@
+seed_everything: 1230
+# define the training
+trainer:
+  # Work directory for the session
+  default_root_dir: .
+  # set a limit to the training (#epochs and/or time limit)
+  max_epochs: 61
+  max_time: null
+  enable_progress_bar: false
+  resume_from_checkpoint: null
+  profiler: null
+  gpus: 1
+  # devices : 4
+  precision: 32
+  accelerator: 'cuda'
+  strategy: 'ddp'
+  devices: 1
+
+  benchmark: false
+  logger:
+    - class_path: pytorch_lightning.loggers.TensorBoardLogger
+      init_args:
+        # save_dir will be set to default_root_dir
+        save_dir: default_root_dir
+        name: tensorboard
+        version: ''
+  enable_checkpointing: true
+  callbacks:
+    # Save states of the model a regular interval
+    - class_path: pytorch_lightning.callbacks.model_checkpoint.ModelCheckpoint
+      init_args:
+        # checkpoints will be saved to default_root_dir/ckpt
+        dirpath: default_root_dir
+        monitor: validation_loss
+        save_top_k: -1
+        every_n_epochs: 1
+        filename: '{epoch}-{validation_loss:.4f}'
+        save_last: true
+  log_every_n_steps: 100
+  check_val_every_n_epoch: 1
+  fast_dev_run: false
+  weights_summary: top
+  deterministic: false
+  auto_lr_find: false
+  detect_anomaly: false
+optimizer:
+  class_path: torch.optim.AdamW
+  init_args:
+    lr: 0.001
+    weight_decay: 0.001
+data:
+      h5_file_path: ../../training_data_generation/h2o.h5
+      partition_options: partition_settings_global.yaml
+      loading_options:
+        hdf_key_mapping:
+          embeds: "attrs:Z"
+          coords: "pos"
+          forces: total_forces_projected_scaled_classical_prior_scaling_1.667e-01_l2reg_5.000e-02

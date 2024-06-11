@@ -1,0 +1,3 @@
+output_file: features.npz
+position_file: ../modeling/simulation.pos_0.xyz
+system: zundel_cat

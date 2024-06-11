@@ -1,0 +1,13 @@
+P: 32
+filename: h2o_256.h5
+t0: 600
+temperatures: [300] 
+groups: ['h2o_T=0300K'] 
+split_by_molecule: True
+split: 3
+dry_run: False
+eps_abs: 1e-8
+l2_regularizations: [0.05]
+optimization_force_stride: 1
+transform_in_chunks: False
+

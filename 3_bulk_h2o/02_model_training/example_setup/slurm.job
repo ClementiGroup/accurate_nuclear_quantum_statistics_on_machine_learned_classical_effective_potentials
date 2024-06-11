@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --export=ALL
+#SBATCH --job-name=tr_0
+#SBATCH --tasks 1
+#SBATCH --mem-per-cpu=64G
+#SBATCH --time=2-00:00:00
+#SBATCH --mail-type=FAIL
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:A5000:4
+#SBATCH --output=out/job%j.out
+#SBATCH --error=out/job%j.err
+#SBATCH --partition=gpu
+
+source ~/.bashrc
+conda activate picg
+python {$TEPIGS_PATH}/scripts/pigs-train_h5.py fit  --config trainer.yaml --config mace.yaml 

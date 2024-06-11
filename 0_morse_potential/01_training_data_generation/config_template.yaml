@@ -1,0 +1,11 @@
+P: 64
+T: !T!
+source_location: /scratch/iryna/PI_CG/Morse_potential/data_generation
+timestep: 0.5
+base_stride: 20
+additional_stride: 1
+equilibration_time: 2.5
+total_time: 502.5
+bead_stride: 1
+dataset_location: ./
+output_prefix: !output_prefix!

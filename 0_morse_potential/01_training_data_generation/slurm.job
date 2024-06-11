@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH -J opt
+#SBATCH --time=02:00:00
+#SBATCH -n 1 -N1
+#SBATCH --mem="500M"
+#SBATCH --job-name=Morse
+
+
+source ~/.bashrc
+conda activate picg
+
+
+mkdir configs
+for T in  100 300 600 ; do
+	# Replace temperature in template
+	cp  config_template.yaml configs/config_$T.yaml
+	sed -i "s/!T!/$T/g"  configs/config_$T.yaml
+	sed -i "s/!output_prefix!/temp_$T/g" configs/config_$T.yaml
+	python ../scripts/generate_dataset.py --config configs/config_$T.yaml
+done

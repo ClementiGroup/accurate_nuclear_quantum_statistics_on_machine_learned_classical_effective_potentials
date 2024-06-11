@@ -1,0 +1,18 @@
+P: 64
+T_0: 600 # Temperature of the source data
+T_1: 300 # Temperature of the target data
+source_location: ../../01_training_data_generation/
+input_folder_name: '600'
+timestep: 0.5
+base_stride: 20 # Stride of the original data, steps
+additional_stride: 1 # additional stride of the output
+equilibration_time: 2.5 # ps
+total_time: 502.5 # ps
+bead_stride: 1
+dataset_location: ./
+output_prefix: 'data'
+traj_file_root: '600_simulation' 
+mass_0: 1728.3071
+mass_1: 3260.9694 
+ 
+
