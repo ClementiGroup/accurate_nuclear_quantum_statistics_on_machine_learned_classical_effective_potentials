@@ -1,7 +1,7 @@
 P: 64
 T_0: 600 # Temperature of the source data
 T_1: 300 # Temperature of the target data
-source_location: ../../01_training_data_generation/
+source_location: ../../../01_training_data_generation
 input_folder_name: '600'
 timestep: 0.5
 base_stride: 20 # Stride of the original data, steps

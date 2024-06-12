@@ -19,17 +19,25 @@ dynamics (2024)"
 
 1) Setup conda environment:
 
-`cd setup`
-`./setup_environment.sh`
+```
+cd setup
+./setup_environment.sh
+activate picg
+```
+2) Download and install `te-pigs` [https://github.com/felixmusil/te-pigs](https://github.com/felixmusil/te-pigs)
 
-2) Download and install `te-pigs`
+3) Install MACE by running the following command
+
+`pip install git+https://github.com/felixmusil/mace.git@develop`
 
 
-3) Setup an environment variable, pointing to the location of `te-pigs` package, for example:
+4) Setup an environment variable, pointing to the location of `te-pigs` package, for example:
 
-`export TEPIGS_PATH=$HOME/software/te-pigs/`
+`export PATH2PIGS=$HOME/software/te-pigs/`
 
 4) Download and install `i-pi`: [https://github.com/venkatkapil24/i-pi.git](https://github.com/venkatkapil24/i-pi.git)
+
+5()
 
 5) For bulk water only: 
   Download  interface for MBPol calculations, `MBX-pythonic`:

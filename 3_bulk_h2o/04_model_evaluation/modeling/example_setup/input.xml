@@ -1,0 +1,42 @@
+<simulation verbosity="medium">
+  <output prefix="simulation">
+    <properties filename="out" stride="1" flush="100">  [ time{picosecond}, conserved, temperature{kelvin}, kinetic_md,  potential  ] </properties>
+    <trajectory filename="pos" format="xyz" stride="1" flush="100"> positions </trajectory>
+    <trajectory filename="for" format="xyz" stride="1" flush="100"> forces </trajectory>
+    <checkpoint filename="restart" stride="20000" overwrite="true" />
+  </output>
+  <total_steps> 1200000 </total_steps>
+  <total_time> 172000 </total_time>
+  <prng>
+    <seed>23658</seed>
+  </prng>
+  <ffsocket mode="unix" name="fes" pbc="true">
+    <address>socket_address</address>
+  </ffsocket>
+  <ffsocket mode="unix" name="pes" pbc="true">
+    <address>ff_socket_address</address>
+  </ffsocket>
+  <system>
+    <initialize nbeads="1">
+      <file mode="xyz" units="angstrom"> ./init.xyz </file>
+      <cell mode="abc" units="angstrom"> [ 19.7295, 19.7295, 19.7295] </cell>
+      <velocities mode="thermal" units="kelvin">300</velocities>
+    </initialize>
+    <forces>
+      <force forcefield="fes" weight="1.0" />
+      <force forcefield="pes" weight="0.5" />
+    </forces>
+    <ensemble>
+      <temperature units="kelvin">300</temperature>
+    </ensemble>
+    <motion mode="dynamics">
+      <fixcom>False</fixcom>
+      <dynamics mode="nvt">
+        <timestep units="femtosecond"> 0.25 </timestep>
+        <thermostat mode="langevin">
+          <tau units="femtosecond"> 100 </tau>
+        </thermostat>
+      </dynamics>
+    </motion>
+  </system>
+</simulation>
