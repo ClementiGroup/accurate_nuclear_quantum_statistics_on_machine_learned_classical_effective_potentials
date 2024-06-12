@@ -1,0 +1,18 @@
+name: picg
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - h5py=3.7.0
+  - ipykernel=6.22.0
+  - matplotlib-base=3.5.2
+  - mdtraj=1.9.7 
+  - pandas=1.4.2 
+  - python=3.9.16 
+  - scikit-learn=1.5 
+  - tqdm=4.64.0 
+  - yaml=0.2.5 
+  - pip:
+      - jsonargparse==4.7.3
+      - git+https://github.com/noegroup/aggforce.git@1a93ef4ddafd2f8a9fc77eabfa4bdd2e2d516880
+
