@@ -22,16 +22,20 @@ dynamics (2024)"
 `cd setup`
 `./setup_environment.sh`
 
-2) Download and install `te-pigs`
+2) Download and install `te-pigs` with
+```
+pip install git+https://github.com/felixmusil/te-pigs.git
+pip install git+https://github.com/felixmusil/mace.git@develop
+```
 
 
-3) Setup an environment variable, pointing to the location of `te-pigs` package, for example:
-
-`export TEPIGS_PATH=$HOME/software/te-pigs/`
 
 4) Download and install `i-pi`: [https://github.com/venkatkapil24/i-pi.git](https://github.com/venkatkapil24/i-pi.git)
 
-5) For bulk water only: 
+to use i-pi you will need to setup the environment variables using
+    ```source $PATH2IPI/env.sh```
+
+5) For bulk water only:
   Download  interface for MBPol calculations, `MBX-pythonic`:
   [https://github.com/venkatkapil24/MBX-pythonic.git](https://github.com/venkatkapil24/i-pi.git) and setup enfironmental variable `$MBX_HOME`, eg,
   `export $MBX_HOME=$HOME/software/MBX-pythonic/`
