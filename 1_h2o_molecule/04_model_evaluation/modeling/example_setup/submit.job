@@ -23,8 +23,8 @@ else
 fi
 
 
-sleep 30
+sleep 10
 echo start drivers
 i-pi-driver -u -h ff_socket_address -m pswater &
-python ${TEPIGS_PATH}/scripts/pigs-run-ase.py --config run-ase.yaml
+pigs-run-ase.py --config run-ase.yaml &
 wait

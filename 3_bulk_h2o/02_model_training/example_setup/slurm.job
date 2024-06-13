@@ -13,4 +13,4 @@
 
 source ~/.bashrc
 conda activate picg
-python {$TEPIGS_PATH}/scripts/pigs-train_h5.py fit  --config trainer.yaml --config mace.yaml 
+pigs-train_h5.py fit  --config trainer.yaml --config mace.yaml
