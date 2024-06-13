@@ -49,7 +49,7 @@ optimizer:
     lr: 0.001
     weight_decay: 0.001
 data:
-      h5_file_path: ../../training_data_generation/h2o.h5
+      h5_file_path: ../../01_training_data_generation/h2o.h5
       partition_options: partition_settings_global.yaml
       loading_options:
         hdf_key_mapping:
