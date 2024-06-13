@@ -6,7 +6,7 @@ layout: default
 
 For a given temperature, the dataset generation involves two steps.
 
-First, PIMD simulation for a single particle in Morse potential is performed. Required initialization xyz file, i-pi xml configuration file and slurm submission script required to run i-pi simulation can be found in folder `example_setup`.
+First, PIMD simulation for a single particle in Morse potential is performed. Required initialization xyz file, i-pi xml configuration file and slurm submission script required to run i-pi simulation can be found in folder `example_setup`. To run the simulation, copy this folder (e.g., `cp example_setup 100`), adjust input files according to the instructions found in `example_setup/README.md` and submit the SLURM job. 
 
 Second,  the i-pi output is combined into a dataset that is then used in training. The processing is handled by `slurm.job`, the processing parameters are
 given in `config_template.yaml`  

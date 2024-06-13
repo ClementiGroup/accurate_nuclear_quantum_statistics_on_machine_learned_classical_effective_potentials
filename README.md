@@ -19,8 +19,12 @@ dynamics (2024)"
 
 1) Setup conda environment:
 
-`cd setup`
-`./setup_environment.sh`
+```
+cd setup
+./setup_environment.sh
+activate picg
+```
+2) Download and install `te-pigs` [https://github.com/felixmusil/te-pigs](https://github.com/felixmusil/te-pigs)
 
 2) Download and install `te-pigs` with
 ```

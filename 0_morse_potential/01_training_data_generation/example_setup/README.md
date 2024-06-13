@@ -4,7 +4,7 @@ layout: default
 
 # PIMD simulation
 
-Template files to run one server for each simulation. 
+Template files for PIMD simulation. 
 
 Things to change in input files for running the simultation:
 input.xml:  line  20   : Set correct temperature instead of 100 

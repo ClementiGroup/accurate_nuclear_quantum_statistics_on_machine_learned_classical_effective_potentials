@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#SBATCH --job-name=model            # Job name, will show up in squeue output
+#SBATCH --partition=gpu                # main or test
+#SBATCH --ntasks=1                     # Number of cores
+#SBATCH --cpus-per-task=8
+#SBATCH --nodes=1                      # Ensure that all cores are on one machine
+#SBATCH --time=2-00:30:00              # Runtime in DAYS-HH:MM:SS format
+#SBATCH --mem="20GB"              # Memory per cpu in MB (see also --mem)
+#SBATCH --output=job.out           # File to which standard out will be written
+#SBATCH --error=job.err            # File to which standard err will be written
+#SBATCH --gres=gpu:1
+
+source ~/.bashrc
+conda activate picg
+
+python {$PATH2PIGS}/scripts/pigs-run_sim.py ipi --conf sim.yaml 
+

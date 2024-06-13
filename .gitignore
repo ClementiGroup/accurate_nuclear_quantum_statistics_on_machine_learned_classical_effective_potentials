@@ -1,5 +1,5 @@
 get_models.sh # pulls models from the original storage
 *.npy
 *.npz
-__pacache__
+__pacache__/
 *.h5

@@ -2,7 +2,7 @@
 layout: default
 ---
 # Model training 
-For training, the environmental variable `$TEPIGS_PATH` should be set to the location of the `te-pigs` 
+For training, the environmental variable `$PATH2PIGS` should be set to the location of the `te-pigs` 
 
 
 The folder `example_setup` contains files required for training:  
