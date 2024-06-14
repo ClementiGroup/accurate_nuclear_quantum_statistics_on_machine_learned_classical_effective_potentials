@@ -24,14 +24,12 @@ cd setup
 ./setup_environment.sh
 activate picg
 ```
-2) Download and install `te-pigs` [https://github.com/felixmusil/te-pigs](https://github.com/felixmusil/te-pigs)
 
 2) Download and install `te-pigs` with
 ```
-pip install git+https://github.com/felixmusil/te-pigs.git
+pip install git+https://github.com/felixmusil/te-pigs.git@v0.1
 pip install git+https://github.com/felixmusil/mace.git@develop
 ```
-
 
 
 4) Download and install `i-pi`: [https://github.com/venkatkapil24/i-pi.git](https://github.com/venkatkapil24/i-pi.git)
