@@ -281,7 +281,7 @@ def ipi_to_hdf5_single_run(
             pot_start = first_frame + 1
             pot_end = last_frame + 1
         else:
-            pot_start = first_name
+            pot_start = first_frame
             pot_end = last_frame
         potential_energy = potential_energy[pot_start:pot_end:stride]
         temp_group.create_dataset("potential_energy", data=potential_energy)
