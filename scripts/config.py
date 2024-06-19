@@ -31,6 +31,7 @@ class BulkH2OConfig:
         rdf_params_oh: RDFConfig,
         rdf_params_hh: RDFConfig,
         stride: int = 1,
+        skip: int = 0
     ):
         self.n_molecules = n_molecules
         self.d = d
@@ -38,3 +39,4 @@ class BulkH2OConfig:
         self.rdf_params_oh = rdf_params_oh
         self.rdf_params_hh = rdf_params_hh
         self.stride = stride
+        self.skip = skip

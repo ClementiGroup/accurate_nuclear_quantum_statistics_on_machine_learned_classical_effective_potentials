@@ -11,7 +11,8 @@ from jsonargparse import CLI
 from typing import Optional, Dict, Union
 import mdtraj as md
 
-from utils.config import RDFConfig, BulkH2OConfig
+
+from config import RDFConfig, BulkH2OConfig
 
 def extract_cv_h2o(position_file):
     """
