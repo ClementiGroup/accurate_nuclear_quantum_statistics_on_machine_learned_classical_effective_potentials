@@ -39,7 +39,7 @@ to use i-pi you will need to setup the environment variables using
 
 5) For bulk water only:
   Download  interface for MBPol calculations, `MBX-pythonic`:
-  [https://github.com/venkatkapil24/MBX-pythonic.git](https://github.com/venkatkapil24/i-pi.git) and setup enfironmental variable `$MBX_HOME`, eg,
+  [https://github.com/venkatkapil24/MBX-pythonic.git](https://github.com/venkatkapil24/MBX-pythonic.git) and setup enfironmental variable `$MBX_HOME`, eg,
   `export $MBX_HOME=$HOME/software/MBX-pythonic/`
 
 
