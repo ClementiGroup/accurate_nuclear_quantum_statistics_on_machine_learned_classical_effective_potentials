@@ -1,16 +1,16 @@
-PATH2CKPT: ../03_models/300/seed_1230_epoch=15-validation_loss=0.2686.ckpt
+PATH2CKPT: ../../../03_models/300/seed_1230_epoch=15-validation_loss=0.2686.ckpt
 ipi_input_fn: ./input.xml
 DRIVER_NAME: mbpol
 num_threads: 1
 PATH2INIT: ./init.xyz
-PATH2RUNASE: /home/username/software/te-pigs/scripts/pigs-run-ase.py 
+PATH2RUNASE: /home/username/software/te-pigs/scripts/pigs-run-ase.py
 PATH2PIGS: /home/software/software/te-pigs
-CONDA_PREFIX: null
+CONDA_PREFIX: /local_scratch2/musil/mamba
 ENV_NAME: picg
-PATH2IPI: /home/username/software/i-pi # Path to te-pigs
+PATH2IPI: /home/username/software/i-pi # Path to i-pi
 compute_vibrational_spectra: false
 device: cuda
 XYZ: null
-MBPOLEXEC: /home/username/software/MBX-pythonic/plugins/i-pi/bin/driver
+MBPOLEXEC: /home/username/software/MBX-pythonic/plugins/i-pi/bin/driver # Path to i-pi driver in mbx repository
 PATH2MBX: ./mbx_tmp.json
-cmd_prefix: touch /tmp/ipi_socket_address; touch /tmp/ipi_ff_socket_address; rm /tmp/ipi_socket_address; rm /tmp/ipi_ff_socket_address 
+cmd_prefix: touch /tmp/ipi_socket_address; touch /tmp/ipi_ff_socket_address; rm /tmp/ipi_socket_address; rm /tmp/ipi_ff_socket_address

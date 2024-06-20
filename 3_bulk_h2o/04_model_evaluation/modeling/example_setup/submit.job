@@ -14,5 +14,5 @@
 source ~/.bashrc
 conda activate picg
 
-python {$PATH2PIGS}/scripts/pigs-run_sim.py ipi --conf sim.yaml 
+pigs-run_sim.py ipi --conf sim.yaml
 

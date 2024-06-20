@@ -10,8 +10,8 @@
 #SBATCH --output=job%j.out
 #SBATCH --error=job%j.err
 #SBATCH --partition=main
-source ~/.bashrc
-conda activate picg
+# source ~/.bashrc
+# conda activate picg
 
 rm /tmp/ipi_socket_address
 rm /tmp/ipi_ff_socket_address
