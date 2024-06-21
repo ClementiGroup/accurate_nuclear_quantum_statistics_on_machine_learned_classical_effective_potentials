@@ -1,5 +1,4 @@
 HOSTNAME: socket_address
 PATH2CKPT: ../../03_models/600/seed_1230_epoch=60-validation_loss=0.3871.ckpt
 PATH2INIT: ./h2o.xyz
-PATH2PIGS: /home/username/Software/te-pigs/
 device: cpu
