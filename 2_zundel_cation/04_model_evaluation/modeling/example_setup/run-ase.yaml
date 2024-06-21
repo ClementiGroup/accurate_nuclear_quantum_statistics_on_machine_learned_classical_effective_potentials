@@ -1,5 +1,4 @@
 HOSTNAME: socket_address
-PATH2CKPT: ../../03_models/100/seed_1230_epoch=60-validation_loss=0.0644.ckpt
+PATH2CKPT: ../../../03_models/100/seed_1230_epoch=60-validation_loss=0.0644.ckpt
 PATH2INIT: ./init.xyz
-PATH2PIGS: <$PATH2TEPIGS>
 device: cpu
