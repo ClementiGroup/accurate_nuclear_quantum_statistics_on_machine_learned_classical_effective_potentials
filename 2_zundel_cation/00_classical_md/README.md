@@ -19,7 +19,7 @@ layout: default
 
 The provided example can be used to run the simulation at 100 K. To run simulation at a different temperature, the following adjustments should be made: 
 
-Parameters to change in input files for running the simultation:
+Parameters to change in input files for running the simulation:
 `input.xml`:  line  21   : Set correct temperature instead of 100 
             line  17   : Use temperature as a suffix for socket address (replace 100 with correct temperature)
 
