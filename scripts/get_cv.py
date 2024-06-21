@@ -8,7 +8,7 @@ from ase.units import Bohr
 
 import numpy as np
 from jsonargparse import CLI
-from typing import Optional, Dict, Union
+from typing import Optional
 import mdtraj as md
 
 
@@ -94,9 +94,7 @@ def analyze_zundel(atomic_object):
     
     # calculate H-H distances
     distances_hh = get_distances(positions_h)[1]
-    # bounded_distances_oh contains distance to the closest O for each H
-    bounded_distances_oh = distances_oh.min(axis=0)
-    print(bounded_distances_oh) 
+
     # Index of the oxygen bound to a particular hydrogen
     bound2oxygen_ndx = distances_oh.argmin(axis=0)
     
