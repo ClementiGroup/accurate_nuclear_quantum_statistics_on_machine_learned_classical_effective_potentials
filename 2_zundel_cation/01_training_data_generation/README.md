@@ -12,11 +12,11 @@ An example initialization xyz file, i-pi xml configuration file and slurm submis
 Files `h5o2.dms4B.coeff.com.dat` and `h5o2.pes4B.coeff.dat` contain parameters of the HBB dipole and potential energy surface of Zundel cation as described in  [J. Chem. Phys. 122, 044308 (2005)](https://doi.org/10.1063/1.1834500).
 
 
-Second, the raw data are processed:  the i-pi output is combined into a single hdf5 dataset (parameters are  given in `config.yaml`). Then, total forces are calculated (`config_postprocess.yaml`), followed by force optimisaziton and substruction of the prior (`config_portprocess.yaml`)
+Second, the raw data are processed:  the i-pi output is combined into a single hdf5 dataset (parameters are  given in `config.yaml`). Then, total forces are calculated (`config_postprocess.yaml`), followed by force optimization and subtraction of the prior (`config_portprocess.yaml`)
 
 The entire prostprocessing step is handled by `slurm.job`
-It is assumed, that PIMD simulation are located in folders with names corresponding to temperatures (eg. `100`, `300`)
+It is assumed, that PIMD simulation are located in folders with names corresponding to temperatures in the format {T:>04d} (eg. `0100`, `0300`, `0600`)
 
 
-The resulting dataset `h5o2+.h5` can be dounloaded from Zenodo
+The resulting dataset `h5o2+.h5` can be downloaded from Zenodo
 #TODO: add links to Zenodo repository and instructions on which file to use 
