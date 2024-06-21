@@ -247,7 +247,7 @@ system_configs = {'h2o': None,
                           unitcell_angles=np.tile(90, (len(full_positions), 3)))
     return full_traj
 
-def rdf_from_ipi(files, top, d, rdf_config, sel1='name O', sel2='name H', include_last=True, stride=1):
+def rdf_from_ipi(files, top, d, rdf_config, sel1='name O', sel2='name H', include_last=True, stride=1, skip=0):
     """Compute RDF fro ipi data
 
     Parameters
@@ -267,9 +267,15 @@ def rdf_from_ipi(files, top, d, rdf_config, sel1='name O', sel2='name H', includ
         
     sel1, sel2 : str
         Selection strings for mdtraj topology.
+    include_last : bool, True
+        If True, last frame is included 
+    stride : int
+        Stride the input trajectory
+    skip : int  
+        Number of frames to skip at the beginning
         
     """
-    full_traj = mdtraj_from_ipi(files, top, d, include_last=include_last, stride=stride)   
+    full_traj = mdtraj_from_ipi(files, top, d, include_last=include_last, stride=stride)[skip::] 
     atoms_1 = full_traj.top.select(sel1)
     atoms_2 = full_traj.top.select(sel2)
     
@@ -305,19 +311,22 @@ def extract_cv_bulk_h2o(position_file,  config_class):
                           config_class.rdf_params_oo,
                           sel1='name O',
                           sel2='name O',
-                          stride=config_class.stride)
+                          stride=config_class.stride,
+                          skip=config_class.skip)
 
     rdf_oh = rdf_from_ipi([position_file], top, config_class.d,
                         config_class.rdf_params_oh,
                         sel1='name O',
                         sel2='name H',
-                        stride=config_class.stride)
+                        stride=config_class.stride,
+                        skip=config_class.skip)
 
     rdf_hh = rdf_from_ipi([position_file], top, config_class.d,
                             config_class.rdf_params_hh,
                             sel1='name H',
                             sel2='name H',
-                            stride=config_class.stride)
+                            stride=config_class.stride,
+                            skip=config_class.skip)
 
     data['rdf_oo_bin_centers'] = rdf_oo[0]
     data['rdf_oo'] = rdf_oo[1]
