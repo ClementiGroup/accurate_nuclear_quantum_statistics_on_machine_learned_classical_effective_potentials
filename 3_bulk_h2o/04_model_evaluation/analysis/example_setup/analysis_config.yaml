@@ -1,26 +1,26 @@
 output_file: features.npz
-position_file: ../modeling/eling/temp_300-forces_total_forces_projected_scaled_classical_prior_scaling_5.000e-01_l2reg_5.000e-02-model_mace-opt_strategy_torch.optim.AdamW-use_sam_False-lr_0.001-weight_decay_0.001-correlation_3-num_interactions_1-seed_everything_1230-epoch_15/simulation.pos_0.xyz
+position_file: ../../modeling/example_setup/simulation.pos_0.xyz
 system: bulk_h2o
 analysis_cfg:
-        class_path: utils.config.BulkH2OConfig
+        class_path: config.BulkH2OConfig
         init_args:
                 d: 19.729499153475388
                 n_molecules: 256
                 stride: 5
                 rdf_params_oo: 
-                        class_path: utils.config.RDFConfig
+                        class_path: config.RDFConfig
                         init_args:
                                 bin_width:  0.01
                                 periodic: True
                                 r_range: [0.0, 1.0]
                 rdf_params_oh:
-                        class_path: utils.config.RDFConfig
+                        class_path: config.RDFConfig
                         init_args:
                                 bin_width: 0.01
                                 periodic: True
                                 r_range: [0.0, 1.0]
                 rdf_params_hh: 
-                        class_path: utils.config.RDFConfig
+                        class_path: config.RDFConfig
                         init_args:
                                 bin_width: 0.01
                                 periodic: True 
