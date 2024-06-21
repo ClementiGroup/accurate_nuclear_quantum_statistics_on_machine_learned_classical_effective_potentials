@@ -1,17 +1,17 @@
 dataset_fn: 'h2o.h5'
 P: 64
-root_location: /scratch/iryna/PI_CG/h2o_molecule/PIMD-efficient-sampling
+root_location: .
 system: 'h2o'
-init_file : /scratch/iryna/PI_CG/h2o_molecule/PIMD-efficient-sampling/0100/init.xyz
-temp_folders: ['0100','0200','0300','0400','0500','0600']
-temperatures: [100, 200, 300, 400, 500, 600]
+init_file : ./example_setup/init.xyz
+temp_folders: ['0100','300','600']
+temperatures: [100, 300, 600]
 data_dict: {pos: [simulation.pos, 'coordinates'],  
             for: [simulation.for, 'forces'],
             fsp:  [simulation.fsp, 'forces']}
 first_frame: 250
 last_frame:  25250
-add_spring_energy: True
-add_potential_energy: True
-recompute_spring_energy: True
+add_spring_energy: False
+add_potential_energy: False
+recompute_spring_energy: False
 potential_energy_file: 'simulation.out'
 spring_energy_file: null
