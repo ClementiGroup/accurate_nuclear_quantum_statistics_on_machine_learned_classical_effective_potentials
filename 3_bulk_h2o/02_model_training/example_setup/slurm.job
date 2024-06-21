@@ -6,11 +6,12 @@
 #SBATCH --time=2-00:00:00
 #SBATCH --mail-type=FAIL
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:A5000:4
-#SBATCH --output=out/job%j.out
-#SBATCH --error=out/job%j.err
+#SBATCH --gres=gpu:A5000:1
+#SBATCH --output=job%j.out
+#SBATCH --error=job%j.err
 #SBATCH --partition=gpu
 
 source ~/.bashrc
 conda activate picg
-python {$PATH2PIGS}/scripts/pigs-train_h5.py fit  --config trainer.yaml --config mace.yaml 
+nvidia-smi
+python $PATH2PIGS/scripts/pigs-train_h5.py fit  --config trainer.yaml --config mace.yaml 
