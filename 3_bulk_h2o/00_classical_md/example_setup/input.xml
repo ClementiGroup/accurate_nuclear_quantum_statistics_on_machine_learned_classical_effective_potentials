@@ -1,22 +1,19 @@
 <simulation verbosity='low'>
    <output prefix='simulation'>
-     <properties filename='out' stride='1' flush='50'>  [ step, time{picosecond}, conserved, temperature{kelvin}, kinetic_md,  potential ] </properties>
-     <trajectory filename='pos' format='xyz' stride='1' flush='50'> positions </trajectory>
-     <trajectory filename='for' format='xyz' stride='1' flush='50'> forces </trajectory>
-     <trajectory filename='fsp' format='xyz' stride='1' flush='50'> forces_spring </trajectory>
-     <trajectory filename='xc' format='xyz' stride='1' flush='50'> x_centroid </trajectory>
-     <trajectory filename='fc' format='xyz' stride='1' flush='50'> f_centroid </trajectory>
-     <checkpoint filename='restart' stride='2000' overwrite='true'/>
+     <properties filename='out' stride='20'>  [ step, time{picosecond}, conserved, temperature{kelvin}, kinetic_md,  potential ] </properties>
+     <trajectory filename='pos' format='xyz' stride='20'> positions </trajectory>
+     <trajectory filename='for' format='xyz' stride='20'> forces </trajectory>
+     <checkpoint filename='restart' stride='20000' overwrite='true'/>
    </output>
    <total_steps> 800000 </total_steps>
-   <total_time> 432000 </total_time>
-   <prng><seed>42</seed></prng>
+   <total_time> 86000 </total_time>
+   <prng><seed>31415</seed></prng>
    <ffsocket name='driver' mode='unix' matching='any'>
        <address> h2o-MBPOL-liquid </address>
        <latency> 1e-3 </latency> 
    </ffsocket>
    <system>
-      <initialize nbeads='32'>
+      <initialize nbeads='1'>
          <file mode='xyz'> init.xyz </file>
          <velocities mode='thermal' units='kelvin'> 300 </velocities>
       </initialize>
