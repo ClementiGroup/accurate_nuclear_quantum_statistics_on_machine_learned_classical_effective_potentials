@@ -14,5 +14,5 @@
 source ~/.bashrc
 conda activate picg
 
-python {$PATH2PIGS}/scripts/pigs-run_sim.py ipi --conf sim.yaml 
-
+# variable $IPI_ROOT is initiated when i-pi/env.sh is sourced 
+python $PATH2PIGS/scripts/pigs-run_sim.py ipi --conf sim.yaml    --PATH2RUNASE $PATH2PIGS/scripts/pigs-run-ase.py --PATH2PIGS $PATH2PIGS --PATH2IPI $IPI_ROOT --MBPOLEXEC $MBX_HOME/plugins/i-pi/bin/driver
