@@ -10,8 +10,8 @@
 #SBATCH --output=job%j.out
 #SBATCH --error=job%j.err
 #SBATCH --partition=main
-source ~/.bashrc
-conda activate picg
+# source ~/.bashrc
+# conda activate picg
 
 rm /tmp/ipi_socket_address
 rm /tmp/ipi_ff_socket_address
@@ -23,8 +23,8 @@ else
 fi
 
 
-sleep 30
+sleep 10
 echo start drivers
 i-pi-driver -u -h ff_socket_address -m pswater &
-python ${PATH2PIGS}/scripts/pigs-run-ase.py --config run-ase.yaml
+pigs-run-ase.py --config run-ase.yaml &
 wait

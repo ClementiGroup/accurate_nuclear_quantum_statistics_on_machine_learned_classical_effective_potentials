@@ -24,24 +24,22 @@ cd setup
 ./setup_environment.sh
 activate picg
 ```
-2) Download and install `te-pigs` [https://github.com/felixmusil/te-pigs](https://github.com/felixmusil/te-pigs)
 
-3) Install MACE by running the following command
+2) Download and install `te-pigs` with
+```
+pip install git+https://github.com/felixmusil/te-pigs.git@v0.1
+pip install git+https://github.com/felixmusil/mace.git@develop
+```
 
-`pip install git+https://github.com/felixmusil/mace.git@develop`
-
-
-4) Setup an environment variable, pointing to the location of `te-pigs` package, for example:
-
-`export PATH2PIGS=$HOME/software/te-pigs/`
 
 4) Download and install `i-pi`: [https://github.com/venkatkapil24/i-pi.git](https://github.com/venkatkapil24/i-pi.git)
 
-5()
+to use i-pi you will need to setup the environment variables using
+    ```source $PATH2IPI/env.sh```
 
-5) For bulk water only: 
+5) For bulk water only:
   Download  interface for MBPol calculations, `MBX-pythonic`:
-  [https://github.com/venkatkapil24/MBX-pythonic.git](https://github.com/venkatkapil24/i-pi.git) and setup enfironmental variable `$MBX_HOME`, eg,
+  [https://github.com/venkatkapil24/MBX-pythonic.git](https://github.com/venkatkapil24/MBX-pythonic.git) and setup enfironmental variable `$MBX_HOME`, eg,
   `export $MBX_HOME=$HOME/software/MBX-pythonic/`
 
 

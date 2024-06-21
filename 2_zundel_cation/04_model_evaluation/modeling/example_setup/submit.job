@@ -26,5 +26,5 @@ fi
 sleep 30
 echo start drivers
 i-pi-driver -u -h ff_socket_address -m zundel &
-python $PATH2PIGS/scripts/pigs-run-ase.py --config run-ase.yaml
+pigs-run-ase.py --config run-ase.yaml
 wait
