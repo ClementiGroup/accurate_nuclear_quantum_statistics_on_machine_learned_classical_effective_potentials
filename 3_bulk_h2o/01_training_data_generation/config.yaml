@@ -13,7 +13,7 @@ first_frame: 10000
 last_frame:  150000
 stride: 10
 add_spring_energy: False
-add_potential_energy: True
+add_potential_energy: False
 recompute_spring_energy: False
-potential_energy_file: 'simulation.out'
+potential_energy_file: null
 spring_energy_file: null
