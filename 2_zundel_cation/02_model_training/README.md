@@ -4,6 +4,7 @@ layout: default
 # Model training 
 For training, the environmental variable `$PATH2PIGS` should be set to the location of the `te-pigs` 
 
+To perform the training, download the dataset h5o2+.h5 (will be available on Zenodo upon publication)
 
 The folder `example_setup` contains files required for training:  
 
