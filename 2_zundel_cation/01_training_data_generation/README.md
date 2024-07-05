@@ -19,4 +19,4 @@ It is assumed, that PIMD simulation are located in folders with names correspond
 
 
 The resulting dataset `h5o2+.h5` can be downloaded from Zenodo
-#TODO: add links to Zenodo repository and instructions on which file to use 
+(Available after the publication)
