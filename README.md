@@ -2,8 +2,7 @@
 ---
 # Supplementary data for "Accurate nuclear quantum statistics on machine-learned classical effective potentials"
 
-Scripts, input files, codes and models required to reproduce the results of "Zaporozhets I. et al. Accurate nuclear quantum statistics on machine learned classical effective potentials
-dynamics (2024)"
+Scripts, input files, codes and models required to reproduce the results of "I. Zaporozhets, F. Musil, V. Kapil, & C.Clementi (2024). Accurate nuclear quantum statistics on machine-learned classical effective potentials. [arXiv: 2407.03448](https://arxiv.org/abs/2407.03448).
 
 ## Systems
 
