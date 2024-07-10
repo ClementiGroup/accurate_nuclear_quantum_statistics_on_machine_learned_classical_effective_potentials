@@ -16,4 +16,4 @@ The entire prostprocessing step is handled by `slurm.job`
 It is assumed, that PIMD simulation are located in folders with names corresponding to temperatures in the following format {T:>04d} (eg. `0100`, `0300`, `0600`)
 
 
-The resulting dataset `h2o.h5` can be dounloaded from Zenodo (Available after the publication)
+The resulting dataset `h2o.h5` can be dounloaded from [Zenodo](https://doi.org/10.5281/zenodo.12684727)

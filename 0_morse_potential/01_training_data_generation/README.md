@@ -13,5 +13,5 @@ given in `config_template.yaml`
 It is assumed, that PIMD simulation are located in folders with names corresponding to temperatures (eg. `100`, `300`, `600`)
 
 
-The resulting dataset can be dounloaded from Zenodo (Available after the publication)
+The resulting dataset can be dounloaded from [Zenodo](https://doi.org/10.5281/zenodo.12684727) 
 

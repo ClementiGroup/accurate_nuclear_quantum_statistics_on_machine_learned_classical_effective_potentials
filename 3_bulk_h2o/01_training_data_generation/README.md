@@ -17,5 +17,4 @@ Since the compute and  memory requirements are different for each of these steps
 It is assumed, that PIMD simulation are located in folders with names corresponding to temperatures (eg. `300`)
 
 
-The resulting dataset `h2o_256.h5` can be dounloaded from Zenodo
-(Available after the publication)
+The resulting dataset `h2o_256.h5` can be dounloaded from [Zenodo](https://doi.org/10.5281/zenodo.12684727). 

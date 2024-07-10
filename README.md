@@ -40,7 +40,9 @@ to use i-pi you will need to setup the environment variables using
   [https://github.com/venkatkapil24/MBX-pythonic.git](https://github.com/venkatkapil24/MBX-pythonic.git) and setup enfironmental variable `$MBX_HOME`, eg,
   `export $MBX_HOME=$HOME/software/MBX-pythonic/`
 
-
+## Training data
+Training data are available on Zenodo (https://doi.org/10.5281/zenodo.12684727).
+To use the datasets, first, download and unpack `CG_quantum_statistics.zip`. Then, copy the dataset/datasets corresponding to the system of interest to the corresnonding training data generation folder (e.g., copy `CG_quantum_statistics/1_h2o_molecule/h2o.h5` to `1_h2o_molecule/01_training_data_generation/`)
 
 ## License
 The content of this repository is licensed under the CC-BY-SA-4.0 license. See the file `LICENSE` for details.
